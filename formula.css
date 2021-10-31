@@ -1,21 +1,40 @@
 html {
-  font-size: calc(1ex + 8vmax);
+  font-family: monospace;
+  font-size: calc(1ch + 2vmin + 3vmax);
 }
 
 body {
-  display: flex;
-  flex-flow: column;
+  padding: 2vmin;
+  padding-inline-start: 5vw;
+  padding-inline-end: 0;
+  margin: auto;
+  overflow-wrap: anywhere;
+}
+
+figure {
   margin: auto;
 }
 
-main {
-  align-items: center;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  min-height: 100vh;
+nav {
+  font-weight: bold;
+  margin-block: 5vh;
 }
 
-math {
-  font-family: sans-serif;
+dt {
+  font-weight: bold;
+  margin: 0;
+  margin-block: 5vh;
+}
+
+dd {
+  margin: 0;
+}
+
+dd::first-letter {
+  font-weight: bold;
+}
+
+:focus {
+  outline-style: dashed;
+  outline-width: thick;
 }
